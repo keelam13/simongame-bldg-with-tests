@@ -12,6 +12,7 @@ function newGame() {
     game.currentGame = [];
     game.playerMoves = [];
     game.score = 0;
+    
     for (let circle of document.getElementsByClassName("circle")) {
         if (circle.getAttribute("data-listner") !== "true") {
             circle.addEventListener("click", (e) => {
